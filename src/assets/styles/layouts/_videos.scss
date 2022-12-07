@@ -1,0 +1,67 @@
+.video {
+    padding: 2rem 0;
+}
+
+.video_contenido {
+    margin: 0 auto;
+    @include tamañoContenedor(358px, 201px);
+}
+
+.videos_titulo {
+    text-align: center;
+}
+
+.titulo_principal {
+    text-align: center;
+}
+
+.titulo_secundario {
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.video_youtube {
+    @include tamañoContenedor(358px, 201px);
+}
+
+legend {
+    background: $formBorder;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 2px 8px;
+}
+
+
+@media (min-width: 640px) {
+
+    .video_youtube {
+        @include tamañoContenedor(448px, 252px);
+    }
+
+    .video_contenido {
+        @include tamañoContenedor(448px, 252px);
+    }
+
+    .sugerencias {
+        background: white;
+        border: 1px solid $formBorder;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        padding: 20px 40px;
+        max-width: 650px;
+    }
+}
+
+@media (min-width: 800px) {
+
+    .video_youtube {
+        @include tamañoContenedor(560px, 315px);
+        width: 560px;
+        height: 315px;
+    }
+
+    .video_contenido {
+        @include tamañoContenedor(560px, 315px);
+    }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <title>Document</title>
+</head>
+
+<body>
+    <include src="./views/header.html"></include>
+    <div class="container pt-5 pb-5">
+        <div class="row">
+            <h1 class="titulo_principal">ORSAI ABESTIAK</h1>
+            <h2 class="titulo_secundario">Una ristra de los mejores temas de Orsai hasta el momento</h2>
+        </div>
+
+        <div class="video">
+            <h2 class="videos_titulo">ONE CLUB MEN</h2>
+            <div class="video_contenido">
+                <iframe class="video_youtube" src="https://www.youtube.com/embed/EOFvyNjzKL4" title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="video">
+            <h2 class="videos_titulo">LAU TEILATU</h2>
+            <div class="video_contenido">
+                <iframe class="video_youtube" src="https://www.youtube.com/embed/tVdqFtmNdxQ" title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="row pt-5 pb-5">
+            <div class="col-3"></div>
+            <div class="col-6">
+                <form name="contact" method="POST" data-netlify="true">
+                    <fieldset class="sugerencias">
+                        <legend>Sugerencias</legend>
+                        <p>
+                            <label>Canción que quieres que versionemos: </label>
+                            <input type="text" name="name" placeholder="Abesti izena">
+                        </p>
+                        <p>
+                            <label>Mail para que estes al tanto de las novedades: </label>
+                            <input type="email" name="email" placeholder="E-mail">
+                        </p>
+                        <p>
+                            <label for="comentario" class="form-label">Sugerencias:</label>
+                            <textarea name="message" class="form-control" placeholder="Escriba aquí su sugerencia"
+                                id="comentario" rows="3"></textarea>
+                        </p>
+                        <div class="contact_checkbox pb-3 pt-2">
+                            <small>* Todos los campos marcados son obligatorios</small>
+                            <div class="conditions"><input type="checkbox" required id="acepto" value="Acepto"> <label
+                                    for="acepto">He leído y acepto la política de privacidad y las condiciones de
+                                    uso</label></div>
+                        </div>
+                        <p class="ms-auto w-100 justify-content-end">
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </p>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="col-3"></div>
+        </div>
+    </div>
+    <include src="./views/footer.html"></include>
+</body>
+
+</html>

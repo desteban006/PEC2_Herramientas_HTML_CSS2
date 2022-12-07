@@ -1,0 +1,118 @@
+.athletic-image {
+    height: 40vh;
+    background-image: url(../images/backOrsai.jpg);
+    background-size: cover;
+    color: $main;
+    display: flex;
+    align-items: center;
+}
+
+.athletic-image p {
+    font-size: 1.5rem;
+}
+
+.article_list {
+    counter-reset: item;
+    list-style-type: none;
+    line-height: 2.2;
+    margin-left: -40px;
+}
+
+.article_list .main-list {
+    display: block;
+    position: relative;
+}
+
+.article_list .main-list span {
+    margin-left: 40px;
+}
+
+.article_list .main-list:before {
+    content: counter(item) " ";
+    counter-increment: item;
+    color: #7eb4e2;
+    top: 50%;
+    margin-top: -1em;
+    background: #f9dd94;
+    height: 4em;
+    width: 4em;
+    line-height: 2em;
+    text-align: center;
+    border-radius: 2em;
+    font-weight: 700;
+}
+
+.article_unorderedList {
+    list-style-type: none;
+}
+
+#ct {
+    border: 1px solid #f1c40f;
+    margin: 100px auto;
+    text-align: center;
+    position: relative;
+    color: $main;
+    padding: 15px;
+    background-color: #1D1F20;
+}
+
+.author {
+    background: #1D1F20;
+    color: #f1c40f;
+    padding: 0 10px;
+    font-size: 20px;
+    position: relative;
+    top: -28px;
+}
+
+.corner {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    transform: rotate(-45deg);
+    position: absolute;
+    background: #1D1F20;
+}
+
+#left_top {
+    top: -16px;
+    left: -16px;
+    border-color: transparent transparent #f1c40f transparent;
+}
+
+#right_top {
+    top: -16px;
+    right: -16px;
+    border-color: transparent transparent transparent #f1c40f;
+}
+
+#left_bottom {
+    bottom: -16px;
+    left: -16px;
+    border-color: transparent #f1c40f transparent transparent;
+}
+
+#right_bottom {
+    bottom: -16px;
+    right: -16px;
+    border-color: #f1c40f transparent transparent transparent;
+}
+
+.texto_cita {
+    padding-top: 13px;
+    font-size: 18px
+}
+
+
+
+
+@media (min-width: 992px) {
+    .athletic-image {
+        height: 50vh;
+    }
+
+    .athletic-image p {
+        font-size: 5rem;
+    }
+}

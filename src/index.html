@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+  <title>UOC Boilerplate</title>
+</head>
+
+<body>
+  <include src="./views/header.html"></include>
+
+  <div class="main">
+    <h1 class="main_title">ORSAI</h1>
+    <h2 class="main_secondary_title">Athletic Club</h2>
+    <hr>
+    <p class="main_about">El origen de todo está en la pretemporada 2019-20, y de los seis componentes del grupo, tan
+      solo De
+      Marcos se defendía a la guitarra.
+      Sin ninguna pretensión profesional, empezaron a ensayar y tomaron clases para mejorar la técnica. La cosa cogió
+      forma cuando en las navidades de 2019,
+      participaron en un concierto de la televisión pública vasca con su versión de "Lau Teilatu" de los míticos Itoiz y
+      al público le gustó.</p>
+    <a class="main_ref" href="javascript:void(0)">Leer más</a>
+    <img class="main_image" src="assets/images/orsai.jpg" alt="Orsai taldea">
+    <div class="main_location">
+      <p>Bizkaia<br>Instalaciones de Lezama</p>
     </div>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+    <button class="main_button" type="button">Fechas de los partidos</button>
+  </div>
+  <include src="./views/footer.html"></include>
+  <script type="module" src="./assets/scripts/main.js"></script>
+</body>
+
 </html>

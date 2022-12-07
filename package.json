@@ -1,14 +1,15 @@
 {
-  "name": "uoc-boilerplate",
-  "version": "3.5.0",
+  "name": "PEC-2",
+  "version": "3.6.0",
   "private": true,
-  "description": "Boilerplate for Advanced HTML/CSS Tools UOC students",
+  "description": "Segunda entrega del semestre, basada en el grupo de música Orsai",
   "scripts": {
     "parcel:serve": "parcel src/index.html -p 8123 --target web --open",
     "parcel:build": "parcel build src/index.html --target web --no-source-maps --no-cache",
+    "stylelint": "stylelint src/**/*.scss",
     "clean": "rimraf dist .cache .cache-loader .parcel-cache",
-    "dev": "npm-run-all clean parcel:serve",
-    "build": "npm-run-all clean parcel:build",
+    "dev": "npm-run-all clean stylelint parcel:serve",
+    "build": "npm-run-all clean stylelint parcel:build",
     "test": "echo 'Everything is working as expected ✅\nStart working on your project by running \\033[1mnpm run dev\\033[0m'"
   },
   "web": "dist/index.html",
@@ -26,8 +27,8 @@
     "url": "git+https://github.com/uoc-advanced-html-css/uoc-boilerplate.git"
   },
   "author": {
-    "name": "Jordi Tarrida",
-    "email": "jorditarrida@uoc.edu"
+    "name": "David Esteban",
+    "email": "desteban006@gmail.com"
   },
   "license": "MIT",
   "bugs": {
@@ -35,13 +36,21 @@
   },
   "homepage": "https://github.com/uoc-advanced-html-css/uoc-boilerplate#readme",
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^6.2.1",
     "@parcel/transformer-sass": "^2.7.0",
+    "@popperjs/core": "^2.11.6",
     "autoprefixer": "^10.4.8",
+    "bootstrap": "^5.2.3",
     "npm-run-all": "^4.1.5",
     "parcel": "^2.7.0",
     "postcss-preset-env": "^7.8.1",
     "posthtml-include": "^1.7.4",
     "rimraf": "^3.0.2",
-    "sharp": "^0.29.1"
+    "sharp": "^0.29.1",
+    "stylelint": "^14.16.0",
+    "stylelint-config-recommended-scss": "^8.0.0",
+    "stylelint-order": "^5.0.0",
+    "stylelint-scss": "^4.3.0",
+    "stylelint-selector-bem-pattern": "^2.1.1"
   }
 }
