@@ -1,0 +1,32 @@
+<div class="pt-5 pb-5 mr-auto ml-auto h-80 w-80 sm:h-108 sm:w-108">
+    <form name="contact" method="POST" data-netlify="true">
+        <fieldset
+            class="sm:bg-white sm:border sm:border-blue sm:border-solid sm:mb-8 sm:mt-8 sm:pt-5 sm:pb-5 sm:pr-10 sm:pl-10">
+            <legend class="bg-blue text-white font-medium text-lg pt-0.5 pb-0.5 pr-2 pl-2">Sugerencias</legend>
+            <p>
+                <label>Canción que quieres que versionemos: </label>
+                <input class="bg-white border border-gray rounded-md pt-1.5 pb-1.5 pr-3 pl-3 text-base font-normal "
+                    type="text" name="name" placeholder="Abesti izena">
+            </p>
+            <p>
+                <label>Mail para que estes al tanto de las novedades: </label>
+                <input class="bg-white border border-gray rounded-md pt-1.5 pb-1.5 pr-3 pl-3 text-base font-normal "
+                    type="email" name="email" placeholder="E-mail">
+            </p>
+            <p>
+                <label for="comentario" class="form-label">Sugerencias:</label>
+                <textarea name="message" class="form-control" placeholder="Escriba aquí su sugerencia" id="comentario"
+                    rows="3"></textarea>
+            </p>
+            <div class="contact_checkbox pb-3 pt-2">
+                <small>* Todos los campos marcados son obligatorios</small>
+                <div class="conditions"><input type="checkbox" required id="acepto" value="Acepto"> <label
+                        for="acepto">He leído y acepto la política de privacidad y las condiciones de
+                        uso</label></div>
+            </div>
+            <p class="ms-auto w-100 justify-content-end">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </p>
+        </fieldset>
+    </form>
+</div>
