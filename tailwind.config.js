@@ -8,6 +8,7 @@ module.exports = {
       spacing: {
         '100': '448px',
         '108': '560px',
+        '112': '700px',
       },
       colors: {
         'blue': '#5B49FE',
